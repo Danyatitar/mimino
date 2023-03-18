@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mimino/assets/favicon-2a2b6965.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <script type="module" crossorigin src="/mimino/assets/mobile-menu-25e4698f.js"></script>
+    <link rel="stylesheet" href="/mimino/assets/mobile-menu-34841a18.css">
+  </head>
+  <body>
+    <header class="header-light">
+  <div class="container">
+    <div class="header-wrapper animate__animated animate__fadeInDown">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link-dark" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-dark" href="hotel.html">Hotel</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link-dark" href="restaurant.html">Restaurant</a>
+          </li>
+        </ul>
+
+        <button
+          class="menu-toggle"
+          data-menu-button
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="mobile-icon"
+            aria-label="mobile-menu"
+            width="21"
+            height="14"
+          >
+            <use class="menu-close-dark" href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+            <use class="menu-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#burger"></use>
+          </svg>
+        </button>
+        <a class="logo-dark" href="./index.html">
+          <span class="header-logo-dark">Mimino</span>
+          <span class="header-logo-light-dark"
+            >restaurant-hotel complex</span
+          ></a
+        >
+      </nav>
+      <ul class="social-list list">
+        <li class="menu-social-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use
+                class="social-icon-dark"
+                href="/mimino/assets/icons-9ea4f0c7.svg#instagram"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use class="social-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-social-item">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="n_opener noreferrer"
+            class="social-icon-link"
+          >
+            <svg class="menu-social-icon" width="20px" height="20px">
+              <use class="social-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu-container menu-light" id="mobile-menu" data-menu>
+  <div class="mobile-menu">
+    <ul class="mobile-list list">
+      <li class="mobile-menu-item">
+        <a class="menu-navlink-dark" href="index.html">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="menu-navlink-dark" href="hotel.html">Hotel</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="menu-navlink-dark" href="restaurant.html">Restaurant</a>
+      </li>
+    </ul>
+  </div>
+  <div class="social-menu">
+    <ul class="mobile-social-list list">
+      <li class="menu-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon-link"
+        >
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-social-item">
+        <a
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon-link"
+        >
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="menu-social-item">
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="n_opener noreferrer"
+          class="social-icon-link"
+        >
+          <svg class="menu-social-icon" width="20px" height="20px">
+            <use class="social-icon-dark" href="/mimino/assets/icons-9ea4f0c7.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <main>
+      <section class="room-hero-section">
+  <div class="room-hero-container container">
+    <div class="room-hero-wrap">
+      <div class="room-hero-left animate__animated animate__fadeInLeft">
+        <h1 class="room-hero-title">Double luxury room</h1>
+        <button
+          class="room-hero-btn js-open-modal"
+          data-modal="3"
+          type="button"
+        >
+          view prices
+        </button>
+        <p class="room-hero-txt desk">
+          The Mimino hotel features spacious and stylish double luxury rooms
+          with modern amenities for a comfortable stay.
+        </p>
+      </div>
+      <div class="swiper hero-swiper animate__animated animate__fadeInRight">
+        <ul class="hero-slider swiper-wrapper">
+          <li class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/mimino/assets/img-1_desk@1x-026883b0.jpg 1x, /mimino/assets/img-1_desk@2x-db885711.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/mimino/assets/img-1_tab@1x-5ad0d232.jpg 1x, /mimino/assets/img-1_tab@2x-8df89c7b.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/mimino/assets/img-1_mob@1x-b2f06f29.jpg 1x, /mimino/assets/img-1_mob@2x-9302b5e1.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="room-hero-img"
+                src="/mimino/assets/img-1_mob@1x-b2f06f29.jpg"
+                alt="Beds"
+                width="250"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+          <li class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/mimino/assets/img-2_desk@1x-21ea5ec2.jpg 1x, /mimino/assets/img-2_desk@2x-52b69a9b.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/mimino/assets/img-2_tab@1x-6f2cfc17.jpg 1x, /mimino/assets/img-2_tab@2x-a27f7e45.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/mimino/assets/img-2_mob@1x-1d76db38.jpg 1x, /mimino/assets/img-2_mob@2x-dd7eadca.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="room-hero-img"
+                src="/mimino/assets/img-2_mob@1x-1d76db38.jpg"
+                alt="Kitchen"
+                width="250"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+          <li class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/mimino/assets/img-3_desk@1x-e147b434.jpg 1x, /mimino/assets/img-3_desk@2x-f8150f1b.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/mimino/assets/img-3_tab@1x-bd1af75f.jpg 1x, /mimino/assets/img-3_tab@2x-7ef6667b.jpg 2x"
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/mimino/assets/img-3_mob@1x-d11da22b.jpg 1x, /mimino/assets/img-3_mob@2x-5e58eda3.jpg 2x"
+                type="image/jpg"
+              />
+              <img
+                class="room-hero-img"
+                src="/mimino/assets/img-3_mob@1x-d11da22b.jpg"
+                alt="Salon"
+                width="250"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+        </ul>
+        <div class="swiper-btn-hero">
+          <div class="swiper-button-prev">
+            <svg width="24" height="24">
+              <use class="swiper-btn-content" href="/mimino/assets/icons-9ea4f0c7.svg#prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="24" height="24">
+              <use class="swiper-btn-content" href="/mimino/assets/icons-9ea4f0c7.svg#next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="room-hero-txt mob">
+      The Mimino hotel features spacious and stylish double luxury rooms with
+      modern amenities for a comfortable stay.
+    </p>
+  </div>
+</section>
+
+      <section class="section amenities">
+  <div class="container">
+    <ul class="amenities-list">
+      <li class="amenities-item">
+        <h3 class="amenities-title">General Amenities & Facilities:</h3>
+        <ul class="amenities-sub-list">
+          <li class="amenities-sub-item">24-hour front desk service</li>
+          <li class="amenities-sub-item">Daily housekeeping</li>
+          <li class="amenities-sub-item">Free Wi-Fi throughout the hotel</li>
+          <li class="amenities-sub-item">Elevator access</li>
+          <li class="amenities-sub-item">Luggage storage</li>
+          <li class="amenities-sub-item">Non-smoking rooms available</li>
+          <li class="amenities-sub-item">
+            Meeting rooms for business and events
+          </li>
+          <li class="amenities-sub-item">On-site parking (surcharge)</li>
+          <li class="amenities-sub-item">Concierge services</li>
+        </ul>
+      </li>
+      <li class="amenities-item">
+        <h3 class="amenities-title">Bathroom:</h3>
+        <ul class="amenities-sub-list">
+          <li class="amenities-sub-item">Private bathroom with shower</li>
+          <li class="amenities-sub-item">Complimentary toiletries</li>
+          <li class="amenities-sub-item">Hair dryer</li>
+          <li class="amenities-sub-item">Fresh towels daily</li>
+          <li class="amenities-sub-item">
+            Deluxe bathrobes (in some room categories)
+          </li>
+        </ul>
+      </li>
+      <li class="amenities-item">
+        <h3 class="amenities-title">Bedroom:</h3>
+        <ul class="amenities-sub-list">
+          <li class="amenities-sub-item">
+            Comfortable beds with high-quality linens
+          </li>
+          <li class="amenities-sub-item">Blackout curtains</li>
+          <li class="amenities-sub-item">
+            Climate control (air conditioning and heating)
+          </li>
+          <li class="amenities-sub-item">Safe for valuables</li>
+          <li class="amenities-sub-item">Writing desk and chair</li>
+          <li class="amenities-sub-item">Flat-screen TV with cable channels</li>
+        </ul>
+      </li>
+      <li class="amenities-item">
+        <h3 class="amenities-title">Kitchen:</h3>
+        <ul class="amenities-sub-list">
+          <li class="amenities-sub-item">
+            In-room kitchenette (in some room categories)
+          </li>
+          <li class="amenities-sub-item">Refrigerator</li>
+          <li class="amenities-sub-item">Microwave</li>
+          <li class="amenities-sub-item">Electric kettle</li>
+          <li class="amenities-sub-item">Cooking utensils and cutlery</li>
+          <li class="amenities-sub-item">Dining table and chairs</li>
+        </ul>
+      </li>
+      <li class="amenities-item">
+        <h3 class="amenities-title">Media:</h3>
+        <ul class="amenities-sub-list">
+          <li class="amenities-sub-item">Flat-screen TV with cable channels</li>
+          <li class="amenities-sub-item">High-speed Wi-Fi</li>
+          <li class="amenities-sub-item">iPod docking station</li>
+          <li class="amenities-sub-item">Speaker system</li>
+          <li class="amenities-sub-item">
+            Electrical outlets for charging devices.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="content-img">
+      <div class="content-bottom">
+        <img
+          class="content-img-bottom"
+          srcset="/mimino/assets/bathroom_1_259-c3c65084.jpg 259w, /mimino/assets/bathroom_1_408-06ff84ce.jpg 408w, /mimino/assets/bathroom_1_496-e08cde4b.jpg 496w, /mimino/assets/bathroom_1_518-5535cb32.jpg 518w, /mimino/assets/bathroom_1_816-6e70cd87.jpg 816w, /mimino/assets/bathroom_1_992-d9d5bad6.jpg 992w"
+          sizes="(min-width: 1440px) 496px,(min-width: 768px) 408px,(min-width: 375px) 259px,100vw"
+          src="/mimino/assets/bathroom_1_259-c3c65084.jpg"
+          alt="bathroom"
+          width="496"
+        />
+      </div>
+      <div class="content-top">
+        <img
+          class="content-img-top"
+          src="../img/Room/amenities_foto/bathroom_2_207.jpg"
+          srcset="/mimino/assets/bathroom_2_207-e5f061f9.jpg 207w, /mimino/assets/bathroom_2_365-d7569a18.jpg 356w, /mimino/assets/bathroom_2_414-7ead283c.jpg 414w, /mimino/assets/bathroom_2_439-116edf6d.jpg 439w, /mimino/assets/bathroom_2_730-891c3ead.jpg 730w, /mimino/assets/bathroom_2_878-e3c786e0.jpg 878w"
+          sizes="(min-width: 1440px) 414px,(min-width: 768px) 365px,(min-width: 375px) 207px,100vw"
+          alt="cosmetics"
+          width="414"
+        />
+      </div>
+      <button
+        class="btn-book-table-dark btn_room js-open-modal"
+        type="button"
+        data-modal="1"
+      >
+        Book a room
+      </button>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer-container container">
+    <nav class="footer-navigation">
+      <ul class="footer-nav">
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="index.html">Home</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="hotel.html">Hotel</a>
+        </li>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-options">
+      <a class="footer-link" href="./index.html">
+        <span class="footer-logo">Mimino</span>
+        <span class="footer-description">restaurant-hotel complex</span>
+      </a>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-sociallink"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="footer-icon">
+              <use
+                class="footer-icon-content"
+                href="/mimino/assets/icons-9ea4f0c7.svg#instagram"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-sociallink"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <svg class="footer-icon">
+              <use
+                class="footer-icon-content"
+                href="/mimino/assets/icons-9ea4f0c7.svg#facebook"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-sociallink"
+            href="https://www.twitter.com/"
+            target="_blank"
+          >
+            <svg class="footer-icon">
+              <use
+                class="footer-icon-content"
+                href="/mimino/assets/icons-9ea4f0c7.svg#twitter"
+              ></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal" data-modal="1">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="32" height="32">
+      <use href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">BOOK <span>A room</span></h2>
+
+  <form action="#" class="form" name="form" id="form">
+    <div class="form-field">
+
+      <input
+        class="form-input form-input-valid"
+        type="text"
+        name="name"
+        id="name"
+        pattern="[A-Z]{1}[a-z]{1,30} [A-Z]{1}[a-z]{1,30}"
+        title="Example: John Frost"
+        placeholder=" " autocomplete="off"
+        required
+      />
+
+      <label class="form-label" for="name">Your Name</label>
+      <p class="form-text">Who should book a table for?</p>
+    </div>
+
+    <div class="form-field">
+
+      <input
+        class="form-input form-input-valid"
+        type="tel"
+        name="tel"
+        id="tel"
+        pattern="[+] [3]{1}[8]{1} [(]{1}[0-9]{3}[)]{1} [0-9]{7}"
+        title="Example: + 38 (000) 0000000"
+        placeholder=" " autocomplete="off"
+        required
+      />
+
+      <label class="form-label" for="tel">+ 38 ()</label>
+      <p class="form-text">Phone number</p>
+    </div>
+
+    <div class="form-field">
+      <input type="date" id="myDateInput" required />
+      <p class="form-text">Check-in date</p>
+    </div>
+
+    <div class="form-field">
+      <input type="date" required />
+      <p class="form-text">Check-out date</p>
+    </div>
+
+    <div class="form-field">
+      <div class="form-input-wrapper">
+        <select name="suite">
+          <option value="dn" selected="selected">DOUBLE SUITE</option>
+          <option value="d1">TRIPLE SUITE</option>
+          <option value="d2">FOUR-SEATER</option>
+        </select>
+        <p class="form-text">Number category</p>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-button-block">
+    <button class="form-button button-style" type="submit" form="form">
+      MAKE A RESERVATION
+    </button>
+  </div>
+</div>
+
+<div class="modal" data-modal="2">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="32" height="32">
+      <use href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">BOOK <span>A TABLE</span></h2>
+
+  <form action="#" class="form2" name="form2" id="form2">
+    <div class="form-field">
+
+      <input
+        class="form-input form-input-valid"
+        type="text"
+        name="name"
+        id="name1"
+        pattern="[A-Z]{1}[a-z]{1,30} [A-Z]{1}[a-z]{1,30}"
+        title="Example: John Frost"
+        placeholder=" " autocomplete="off"
+        required
+      />
+      <label class="form-label" for="name">Your Name</label>
+      <p class="form-text">Who should book a table for?</p>
+    </div>
+
+    <div class="form-field">
+      <select name="people">
+        <option value="none" disabled="disabled" selected="selected">
+          number of people
+        </option>
+        <option value="1-5">1-5</option>
+        <option value="5-10">5-10</option>
+        <option value="10-15">10-15</option>
+        <option value="15-20">15-20</option>
+      </select>
+    </div>
+
+    <div class="form-field form-field-order">
+      <input type="date" required />
+      <p class="form-text">What date to book?</p>
+    </div>
+
+    <div class="form-field">
+      <input
+        class="form-input form-input-valid"
+        type="tel"
+        name="tel"
+        id="tel1"
+        pattern="[+] [3]{1}[8]{1} [(]{1}[0-9]{3}[)]{1} [0-9]{7}"
+        title="Example: + 38 (000) 0000000"
+        placeholder=" " autocomplete="off"
+        required
+      />
+
+      <label class="form-label" for="tel">+ 38 ()</label>
+      <p class="form-text">Phone number</p>
+    </div>
+  </form>
+
+  <div class="form-button-block">
+    <button class="form-button button-style" type="submit" form="form2">
+      MAKE A RESERVATION
+    </button>
+  </div>
+</div>
+
+<div class="modal" data-modal="3">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="32" height="32">
+      <use href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">prices per room</h2>
+  <p class="modal-text">Double suite</p>
+
+  <form action="#" class="form3" name="form3" id="form3">
+    <div class="form-field">
+      <div class="form-input-wrapper">
+        <select name="NnightD">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="14">14</option>
+          <option value="28">28</option>
+        </select>
+        <p class="form-text">Number of nights</p>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceD"
+        id="priceD"
+        placeholder=" "
+      />
+      <label class="form-label" for="priceD">1000</label>
+      <p class="form-text">UAH</p>
+    </div>
+  </form>
+
+  <div class="form-button-block">
+    <button class="form-button button-style" type="submit" form="form3">
+      MAKE A RESERVATION
+    </button>
+  </div>
+</div>
+
+<div class="modal" data-modal="4">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="32" height="32">
+      <use href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">prices per room</h2>
+  <p class="modal-text">Triple Room</p>
+
+  <form action="#" class="form4" name="form4" id="form4">
+    <div class="form-field">
+      <div class="form-input-wrapper">
+        <select name="NnightT">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="14">14</option>
+          <option value="28">28</option>
+        </select>
+        <p class="form-text">Number of nights</p>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceT"
+        id="priceT"
+        placeholder=" "
+      />
+      <label class="form-label" for="priceT">1500</label>
+      <p class="form-text">UAH</p>
+    </div>
+  </form>
+
+  <div class="form-button-block">
+    <button class="form-button button-style" type="submit" form="form4">
+      MAKE A RESERVATION
+    </button>
+  </div>
+</div>
+
+<div class="modal" data-modal="5">
+  <button class="modal-order-box-btn js-modal-close">
+    <svg width="32" height="32">
+      <use href="/mimino/assets/icons-9ea4f0c7.svg#close"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal-title">prices per room</h2>
+  <p class="modal-text">four-seater room</p>
+
+  <form action="#" class="form5" name="form5" id="form5">
+    <div class="form-field">
+      <div class="form-input-wrapper">
+        <select name="NnightF">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="14">14</option>
+          <option value="28">28</option>
+        </select>
+        <p class="form-text">Number of nights</p>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <input
+        class="form-input"
+        disabled="disabled"
+        type="text"
+        name="priceF"
+        id="priceF"
+        placeholder=" "
+      />
+      <label class="form-label" for="priceF">2000</label>
+      <p class="form-text">UAH</p>
+    </div>
+  </form>
+
+  <div class="form-button-block">
+    <button class="form-button button-style" type="submit" form="form5">
+      MAKE A RESERVATION
+    </button>
+  </div>
+</div>
+<div class="modal-overlay js-overlay-modal"></div>
+
+<script>
+  const selectD = document.querySelector('select[name="NnightD"]');
+  const priceInputD = document.querySelector('input[name="priceD"]');
+  const priceLabelD = document.querySelector('label[for="priceD"]');
+
+  const selectT = document.querySelector('select[name="NnightT"]');
+  const priceInputT = document.querySelector('input[name="priceT"]');
+  const priceLabelT = document.querySelector('label[for="priceT"]');
+
+  const selectF = document.querySelector('select[name="NnightF"]');
+  const priceInputF = document.querySelector('input[name="priceF"]');
+  const priceLabelF = document.querySelector('label[for="priceF"]');
+
+  selectD.addEventListener('change', event => {
+    const selectedValue = event.target.value;
+    const selectedPrice = Number(selectedValue);
+
+    if (selectedPrice) {
+      priceInputD.value = selectedPrice * 1000;
+      priceLabelD.innerText = selectedPrice * 1000;
+    }
+  });
+
+  selectT.addEventListener('change', event => {
+    const selectedValue = event.target.value;
+    const selectedPrice = Number(selectedValue);
+
+    if (selectedPrice) {
+      priceInputT.value = selectedPrice * 1500;
+      priceLabelT.innerText = selectedPrice * 1500;
+    }
+  });
+
+  selectF.addEventListener('change', event => {
+    const selectedValue = event.target.value;
+    const selectedPrice = Number(selectedValue);
+
+    if (selectedPrice) {
+      priceInputF.value = selectedPrice * 2000;
+      priceLabelF.innerText = selectedPrice * 2000;
+    }
+  });
+</script>
+
+    
+  </body>
+</html>
